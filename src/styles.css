@@ -1,49 +1,64 @@
+html {
+	background: #1c1c1c;
+}
 .App {
-  font-family: sans-serif;
-  text-align: center;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+a,
+a:visited,
+a:active {
+	color: rgb(210, 23, 23);
+}
+
+.react-pdf__Page__canvas {
+	margin: 0 auto;
+	width: 80% !important;
+	height: 100% !important;
 }
 
 h4 {
-  text-align: left;
-  margin-left: 40px;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.4em;
+	/* margin-left: 40px; */
 }
 
 hr {
-  border-top: 2px dotted #3f51b5;
+	border-top: 2px dotted red;
 }
 
 button {
-  margin-right: 10px;
-  background: #3f51b5;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  width: 100px;
-  cursor: pointer;
-  box-shadow: 2px 2px 2px 1px #ccc;
+	margin-right: 10px;
+	background-image: linear-gradient(red, yellow);
+	color: black;
+	border: none;
+	padding: 5px 10px;
+	width: 100px;
+	cursor: pointer;
 }
 
 /* For pdf */
 .react-pdf__Page {
-  margin-top: 10px;
+	margin-top: 10px;
 }
 .react-pdf__Page__textContent {
-  border: 1px solid darkgrey;
-  box-shadow: 5px 5px 5px 1px #ccc;
-  border-radius: 5px;
 }
 
 .react-pdf__Page__annotations.annotationLayer {
-  padding: 20px;
+	padding: 20px;
 }
 
 .react-pdf__Page__canvas {
-  margin: 0 auto;
+	margin: 0 auto;
 }
 
 /* For all pages */
 .all-page-container {
-  height: 100%;
-  max-height: 500px;
-  overflow: auto;
+	height: 100%;
+	min-width: 1200px;
+	max-height: 2200px;
+	overflow: auto;
 }
